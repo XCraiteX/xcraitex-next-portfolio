@@ -1,0 +1,49 @@
+.back {
+  animation: loader-rotate 2s linear infinite;
+  border-radius: 50%;
+  background: radial-gradient(circle, #40c9ff 5%, #e81cff 100%);
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 320px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}
+
+.back1{
+    animation: back1 40s linear infinite;
+}
+
+.back2 {
+  animation: back2 40s linear infinite;
+}
+
+
+@keyframes back1 {
+    0%{
+        transform: translate(-420px, -160px) scale(0.8);
+    }
+    10%{
+        transform: translate(-220px, 100px) scale(1);
+    }
+    30%{
+        transform: translate(0, -100px) scale(1.2);
+    }
+    45%{
+        transform: translate(400px, 100px) scale(0.8);
+    }
+    70%{
+         transform: translate(800px, -100px) scale(1.2);
+    }
+    85%{
+        transform: translate(200px, 520px) scale(2.6);
+    }
+
+    100%{
+        transform: translate(-420px, -160px) scale(0.8);
+    }
+}
+
