@@ -5,7 +5,7 @@ import uvicorn
 
 from db.base import init_db, db_session
 from db.models import Visits
-from lib.ip import get_ip
+from lib.ip import get_ip, get_by_ip_country_region_city_postal_lat_lon_corp
 from config import API_PREFIX
 
 app = FastAPI()
@@ -39,7 +39,10 @@ async def app_main(request: Request):
 
         # Если юзера нет, добавляем посещение
         if not result:
-            obj = Visits(address=ip)
+            country, region, city, postal, latitude, longitude, corporation = await get_by_ip_country_region_city_postal_lat_lon_corp(ip)
+            
+            obj = Visits(address=ip, country=country, region=region, city=city, postal=postal, latitude=latitude, longitude=longitude, corporation=corporation)
+            
             db.add(obj)
             await db.commit()
     
