@@ -61,7 +61,7 @@ export const servicesData: serviceScheme[] = [
     {
         title: "Администрирование",
         description: "Обслуживание серверов и проектов",
-        price_byn: "от 60 BYN",
+        price_byn: "60 BYN",
         price_rub: "1500 ₽",
         icon: <FaServer size={50}/>,
         popular: false

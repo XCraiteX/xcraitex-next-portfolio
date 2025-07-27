@@ -6,7 +6,7 @@ export const projectsData: projectScheme[] = [
         detail: "Ты сейчас здесь)",
         domain: "redlite.ru",
         image: "/projects/xcraitex.png",
-        link: "/"
+        link: "https://redlite.ru/xcraitex"
     },
     {
         name: "REDLITE CLAN",

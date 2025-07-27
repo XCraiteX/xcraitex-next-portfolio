@@ -1,5 +1,76 @@
+/* ABOUT */
 @media(max-width: 1337px){
     .about-text{
         width: 70%;
+    }
+}
+
+@media(max-width: 841px) and (min-width: 563px){
+    .about-text{
+        width: 85%;
+    }
+}
+
+@media(max-width: 563px){
+    .about-text{
+        width: 100%;
+        text-align: center;
+    }
+    .to-center{
+        display: flex;
+        justify-content: center;
+    }
+    .about-title{
+        text-align: center;
+    }
+    .block-title{
+        text-align: center;
+    }
+    .main-text{
+        align-items: center;
+    }
+}
+
+
+/* HEADER */
+@media(max-width: 766px){
+    .default-nav{ 
+        display: none;
+    }
+    .burger-nav{
+        display: flex;
+    }
+}
+
+
+
+
+/* STACK */
+@media(min-width: 1199px){
+    .arrow-container{
+        position: absolute;
+        right: 0;
+        margin: 0;
+    }
+}
+@media(max-width: 1199px){
+    .arrow-container{
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+}
+
+
+/* PROJECTS */
+@media(max-width: 547px){
+    .proj{
+        width: 400px;
+        height: 210px;
+    }
+}
+@media(max-width: 428px){
+    .proj{
+        width: 340px;
+        height: 180px;
     }
 }
