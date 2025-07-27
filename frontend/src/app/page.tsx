@@ -20,6 +20,7 @@ import { RiTelegram2Fill } from "react-icons/ri";
 import { FaVk } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Visits from "@/components/global/visits";
 
 const RightToLeftControls = {initial: { opacity: 0, x: 20 }, whileInView: { opacity: 1, x: 0 }}
 const BottomToUpControls = {initial: { opacity: 0, y: 10 }, whileInView: { opacity: 1, y: 0 }}
@@ -203,13 +204,15 @@ export default function Home() {
               className="flex gap-8 justify-center flex-wrap">
               <SocialButton text="Telegram" href="http://t.me/xcraitex" className="bg-[#1775ce]" icon={<RiTelegram2Fill/>}/>
               <SocialButton text="VKontakte" href="https://vk.com/rlcraitex" className="bg-[#144a88]" icon={<FaVk/>}/>
-              <SocialButton text="Discord" href="http://discord.gg/mPKa2sUrmZ" className="bg-[#1a116d]" icon={<FaDiscord/>}/>
+              <SocialButton text="Discord" href="http://discord.gg/" className="bg-[#1a116d]" icon={<FaDiscord/>}/>
               <SocialButton text="GitHub" href="https://github.com/XCraiteX" className="bg-black" icon={<FaGithub/>}/>
             </motion.div>
           </div>
         </SectionCard>
         
       </main>
+
+      <Visits/>
     </>
   );
 }
