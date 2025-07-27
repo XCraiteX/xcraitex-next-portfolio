@@ -2,15 +2,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ArrowButton = ({children}: {children?: React.ReactNode}) => {
+const ArrowButton = ({children, href, onClick}: {children?: React.ReactNode, href: string, onClick?: () => void}) => {
   return (
     <StyledWrapper>
-      <button className="super-button">
+      <a href={href}>
+      <button className="super-button" onClick={onClick}>
         <span>{children}</span>
         <svg fill="none" viewBox="0 0 24 24" className="arrow">
           <path strokeLinejoin="round" strokeLinecap="round" strokeWidth={2} stroke="currentColor" d="M5 12h14M13 6l6 6-6 6" />
         </svg>
-      </button>
+      </button></a>
     </StyledWrapper>
   );
 }
@@ -32,7 +33,7 @@ const StyledWrapper = styled.div`
     letter-spacing: 0.5px;
     cursor: pointer;
     overflow: hidden;
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     z-index: 1;
