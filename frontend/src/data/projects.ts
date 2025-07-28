@@ -35,5 +35,12 @@ export const projectsData: projectScheme[] = [
         domain: "artsauna.by",
         image: "/projects/artsaun.png",
         link: "https://artsauna.by",
+    },
+    {
+        name: "Яндекс Доставка",
+        detail: "Привлечение трафика в Яндекс Доставку",
+        domain: "delivery-yandex.by",
+        image: "/projects/yandel.png",
+        link: "https://delivery-yandex.by",
     }
 ]
