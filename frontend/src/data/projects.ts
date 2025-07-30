@@ -31,7 +31,7 @@ export const projectsData: projectScheme[] = [
     },
     {
         name: "Каркас строй",
-        detail: "Строительство каркасный домов, бань и т д",
+        detail: "Строительство каркасных домов, бань и т д",
         domain: "artsauna.by",
         image: "/projects/artsaun.png",
         link: "https://artsauna.by",

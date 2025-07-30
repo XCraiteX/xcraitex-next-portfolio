@@ -38,7 +38,7 @@ export default function Header() {
                 <a href="#home" className="hover:text-pink-500 transition" onClick={() => setOpen(!open)}>Главная</a>
                 <a href="#about" className="hover:text-pink-500 transition" onClick={() => setOpen(!open)}>Обо мне</a>
                 <a href="#stack" className="hover:text-pink-500 transition" onClick={() => setOpen(!open)}>Технологии</a>
-                <a href="#projects" className="hover:text-pink-500 transition" onClick={() => setOpen(!open)}>Прроекты</a>
+                <a href="#projects" className="hover:text-pink-500 transition" onClick={() => setOpen(!open)}>Проекты</a>
                 <a href="#services" className="hover:text-pink-500 transition" onClick={() => setOpen(!open)}>Услуги</a>
                 <a href="#contact" className="hover:text-pink-500 transition" onClick={() => setOpen(!open)}>Контакты</a>
                 </nav>
