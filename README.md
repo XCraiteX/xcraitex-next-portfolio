@@ -19,7 +19,7 @@
 ## Installation
 #### 1. Clone the repository
 ```bash
-git clone https://github.com/xcraitex/new-redlite-ru.git
+git clone https://github.com/xcraitex/xcraitex-next-portfolio.git
 ```
 
 #### 2. Edit config.ts
